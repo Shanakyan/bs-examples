@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Комнаты с удобствами</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .cover-container {
+            /*background-color:darkslategray;*/
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        .cover-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(img/2.jpg);
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            will-change: transform;
+            transform: translate3d(0px, 0px, 0px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid">
+
+            <!--<a class="h2" href="#">Logo</a>-->
+            <a class="h2" href="#">Logo</a>
+            <div class="d-flex justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Галерея</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Описание</a>
+                        </li>
+                        <!-- описание -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Цены</a>
+                        </li>
+                        <!-- контакты-->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--<li class="nav-item dropdown">
+
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Действие</a></li>
+            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled">Отключенная</a>
+    </li>-->
+    <!--<form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-success" type="submit">Поиск</button>
+    </form>-->
+    <!--<div class="cover-container">
+
+
+            <div class="container">
+        <div class="px-4 py-5 my-15 text-center border  d-flex flex-column vh-100">
+
+            <h1 class="display-5 fw-bold">Комнаты рядом с Олимпийским парком</h1>
+            <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+
+    </div>-->
+    <div class="cover-container cover-img">
+        <!-- <img src="img/обложка.jpg" class="card-img-top" alt="">  -->
+    </div>
+
+    <div class="container">
+        <div class="px-4 py-5 my-15 text-center border  d-flex flex-column vh-100">
+            <h1 class="display-5 fw-bold">Комнаты рядом с Олимпийским парком</h1>
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <div class="input-group">
+
+                    <button type="button" class="btn btn-outline-primary  mx-auto">
+                        <h2>
+                            <img src="icon/whatsapp.svg" alt="Alternate Text" />
+
+                            Бронировать
+                        </h2>
+
+                    </button>
+                    <p class="text-center">
+                        <h3 class="mx-auto"><img src="icon/telephone.svg" alt="Alternate Text" /> +79882818141</h3>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- телефон на обложке -->
+        <!--<div class="position-absolute top-50 start-50 translate-middle">
+            <p class="text-center">
+                <h2><img src="icon/telephone.svg" alt="Alternate Text" /> +79882818141</h2>
+            </p>
+        </div>-->
+        <!--адрес на обложке-->
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+
+            <h4>
+                <img src="icon/geo-alt.svg" alt="Alternate Text" /> ПГТ Сириус,Листопадная 35
+            </h4>
+        </div>
+
+        <!--  *********Галерея*********   -->
+        <div class="row g-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="img/8.jpg" alt="" data-bs-target="#carouselExample" data-bs-slide-to="0" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="img/3.jpg" alt="" data-bs-target="#carouselExample" data-bs-slide-to="1" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="img/4.jpg" alt="" data-bs-target="#carouselExample" data-bs-slide-to="2" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="img/5.jpg" alt="" data-bs-target="#carouselExample" data-bs-slide-to="3" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="img/6.jpg" alt="" data-bs-target="#carouselExample" data-bs-slide-to="4" />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="img/7.jpg" alt="" data-bs-target="#c" data-bs-slide-to="5" />
+            </div>
+        </div>
+
+        <!--моделное окно-->
+        <!-- Кнопка-триггер модального окна -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Запустите демо модального окна
+        </button>
+
+        <!-- Модальное окно -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <!-- -------карусель--------- -->
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/6.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/7.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                        <!-- -------карусель--------- -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p> <span class="h3">С</span>даются посуточно комнаты с удобствами рядом с Олимпийским парком. Все комнаты имеют отдельный вход с улицы. В комнате имеется 2 односпальные кровати( их можно соединить с общим матрасом) для дополнительного спального места, раскладное кресло - кровать, телевизор, кондиционер, холодильник, электрочайник, санузел. Мебель новая. Гостям предоставляются полотенце, предметы для личной гигиены, фен. На всей территории дома работает сеть Wi-Fi. </p>
+            <p>В просторном зеленом дворе можно прекрасно проводить летние вечера. Есть большая общая кухня, зона для барбекю, место для парковки. Кухня оборудована для самостоятельного приготовления еды. Имеется необходимая посуда, микроволновая печь, утюг и гладильная доска, стиралная машина.  </p>
+            <p>Дорога к морю от дома проходит по прямой местности и занимает не более 15мин. Рядом находится магазин 5-ка( 100м от дома ), остановка общественного транспорта, По дороге на пляж находятся кафе,столовые, сувенирные магазины, экскурсионные бюро. Пляж бесплатный,галечный, оборудован раздевалками,лежаками, шезлонгами, зонтиками от солца и душевыми. Вдоль моря проходит красивая и чистая  набережная с велодорожкой.  </p>
+            <p>В шаговой доступности <a href="http://xn----8sbwaafbgebmvqgqj.xn--p1ai/" target="_blank">Олимпийский парк</a>, ж/д станция "Имеретинский курорт", откуда на "Ласточке" можно доехать до г. Сочи или на горнолыжный курорт <a href="https://go.rosakhutor.com/?utm_source=google&utm_medium=cpc&utm_campaign=10312541509&utm_content=564326565789&utm_term=%D1%80%D0%BE%D0%B7%D0%B0%20%D1%85%D1%83%D1%82%D0%BE%D1%80&utmstat=us|google|cid|10312541509|aid|564326565789|gid|103556024140|pid|kwd-38988712328|keyword|%D1%80%D0%BE%D0%B7%D0%B0%20%D1%85%D1%83%D1%82%D0%BE%D1%80|adposition||placement||region|9051371|device|c&gclid=CjwKCAiApfeQBhAUEiwA7K_UH5-gYZXfZDngbsUs0qNS9ZFqtz7yTEhX-UOCPwAeG53jJ1vjq0hysxoCzP8QAvD_BwE" target="_blank">Роза Хутор</a> (45мин), первый в России тематический парк равлечений для всей семьи <a href="https://www.sochipark.ru/ " target="_blank">Сочи Парк</a>, граница Абхазия.  </p>
+        </div>
+        <div class="mx-auto col col-md-6 border ">
+            <h5>Цены на 2022г. за номер в сутки.</h5>
+            <table class=" mx-auto table table-bordered table-sm table-striped table-active ">
+                <thead>
+                    <tr>
+                        <th scope="col">Месяц</th>
+                        <th scope="col">Цена в сутки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Июнь</td>
+                        <td>1000р.</td>
+                    </tr>
+                    <tr>
+                        <td>Июль</td>
+                        <td>2000р.</td>
+                    </tr>
+                    <tr>
+                        <td>Август</td>
+                        <td>2500р.</td>
+                    </tr>
+                    <tr>
+                        <td>Сентябрь</td>
+                        <td>1700р.</td>
+                    </tr>
+                    <tr>
+                        <td> Октябрь - Май</td>
+                        <td>Цена договорная</td>
+                    </tr>
+
+                </tbody>
+                <caption>
+                    Дети до 3-х лет бесплатно.
+                </caption>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
