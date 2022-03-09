@@ -13,8 +13,37 @@
     <meta property="og:image:height" content="628">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://mydomen">
-    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="image_src" href="/img/app/home-1200x628.jpg" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0093ff">
+    <meta name="msapplication-TileColor" content="#0093ff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .cover-container {
+            /*background-color:darkslategray;*/
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        .cover-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(img/2.jpg);
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
             will-change: transform;
             transform: translate3d(0px, 0px, 0px);
         }
